@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+</head>
+
+<div>
+  <header>
+    <h1 id="title" class="text-center">become a <span class="red-text"><strong>MEMBER</strong></span></h1>
+    <p id="description" class="text-center">Join our community</p>
+  </header>
+
+  <br>
+  <hr>
+
+  <body id="main">
+    <form id="survey-form" class="container">
+
+      <h2>Personal Details</h2>
+      
+      <label for="name" id="name-label">First Name:
+      <input type="text" id="name" placeholder="Enter your first name" required>
+      </label>
+            
+      <label for="last-name"> Last Name:
+      <input type="text" id="last-name" placeholder="Enter your last name" required>
+      </label>
+        
+      <label for="email" id="email-label">Email:
+      <input type="email" id="email" placeholder="Enter your email" required>
+      </label>
+
+      <div class="small-width-container">
+      <label for="date-of-birth">Date of Birth:
+      <input type="date" id="date-of-birth">
+      </label>
+
+      <label for="dropdown" id="dropdown-label">Gender:
+        <select name="gender" id="dropdown">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </label>
+
+      </div>
+      
+      <h2>Frisbee Details</h2>
+      
+      <label for="number" id="number-label">Years playing competitive ultimate:
+      <input type="number" min="0" max="20" placeholder="0" id="number" class="small-width-container">
+      </label>
+      
+      <div id="checklist">
+        Send me updates about the:
+        <br>
+        <label class="checkbox"><input type="checkbox" value="single-gender">
+        Single-gender Season
+        </label>
+        <br>
+        <label class="checkbox"><input type="checkbox" value="mixed">
+        Mixed Season
+        </label>
+        <br>
+        <label class="checkbox"><input type="checkbox" value="youth">
+        Youth Season
+        </label>
+      </div>
+
+      <h2>Code of Conduct</h2>
+
+      <div id="code-of-conduct">
+        <h3>Bronze Bullseye Code of Conduct</h3>
+
+  <p>In addition to adherence to the purpose of the Codes of Conduct, the following standards of behaviour are expected with regard to conduct during any activity held by or under the auspices of Bronze Bullseye Ultimate Club in the capacity as an administrator, volunteer, coach, player, official or spectator.</p>
+  <p>Any person who does not comply with this CODE OF CONDUCT – or who otherwise causes a disturbance may be reported to the relevant Authority and evicted from the venue and/or banned from attending future events.</p>
+        <h4>Excellence</h4>
+        <ul>
+  <li>I will behave in a socially acceptable and responsible manner that enhances the reputation and goodwill of Bronze Bullseye Ultimate Club</li>
+        
+          <li>I will work equally hard for myself and the team</li>
+          <li>I will treat all players as i would like to be treated</li>
+  <li>I will always endeavour to create an inclusive environment when i am representing Bronze Bullseye Ultimate</li>
+        </ul>
+
+        <h4>Spirit of the Game</h4>
+        <ul>
+  <li>I will always play fair and by the rules of the game and understand that it is everyone’s responsibility to ensure this happens</li>
+          <li>I will congratulate all players on their performance regardless of the game’s outcome</li>
+          <li>I will thank the opposition at the end of the game</li>
+          <li>I will always play in a safe manner and never engage in dangerous plays</li>
+        </ul>
+
+        <h4>Respect</h4>
+        <ul>
+          <li>I will respect my coach, captains, teammates, opposition, volunteers and staff</li>
+  <li>I will respect the rights, dignity and worth of all participants regardless of their gender, ability, sexual orientation, cultural background or religion</li>
+          <li>I will respect the talent, potential and development of fellow players and competitors</li>
+          <li>I will always respect the use of facilities and equipment provided</li>
+          <li>I will not tolerate abusive, bullying or threatening behaviour</li>
+        </ul>
+
+        <h3>Integrity</h3>
+        <ul>
+  <li>I will act with integrity and objectivity and accept responsibility for my decisions and actions</li>
+          <li>I will ensure my decisions and actions contribute to a harassment-free environment</li>
+  <li>Wherever practical I will avoid unaccompanied and unobserved one-on-one activity (when in a supervisory capacity or where a power imbalance exists) with people under the age of 18.</li>
+          <li>I will never advocate or condone the use of illicit drugs or other banned substances</li>
+  <li>I will display responsible behaviours in relation to alcohol and other drugs and I will never offer these to a minor</li>
+  <li>I will ensure that any physical contact with another person is appropriate to the situation and necessary for the person’s skill development</li>
+          <li>I will never participate in or advocate practices that involve match-fixing</li>
+  <li>I will refrain from engaging in negative or destructive discussions or postings on social media about players, coaches, spectators, officials, administrators or other Ultimate participants, that may be viewed as abusive, harassing or offensive in nature.</li>
+        </ul>
+      </div>
+      <div id="conduct-agreement">
+        <p>Do you agree to follow the code of conduct?</p>
+          <label class="checkbox">
+            Yes
+            <input type="radio" name="code-conduct" value="yes" required>
+          </label>
+    
+          <label class="checkbox">
+            No
+            <input type="radio" name="code-conduct" value="no">
+          </label>
+        <br>
+      </div>
+      
+      <label for="comments-suggestions">
+        Any comments or suggestions:
+        <br>
+        <textarea id="comments-suggestions" rows="8" cols="100"></textarea>
+      </label>
+      
+      <br>
+      
+      <button type="submit" id="submit">Submit</button>
+      
+    </form>
+  </body>
+</div>
